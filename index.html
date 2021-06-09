@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetaJob</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
+    <script>
+        function showAlert() {
+          var myText = "Application Submitted Successfully!";
+          alert (myText);
+        }
+    
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          function showMenu() {
+            document.getElementById("open_menu").style.display = "block";
+          }
+          function closeMenu() {
+            document.getElementById("open_menu").style.display = "none";
+          }
+        </script>
+    
+</head>
+<body>
+    <div class="master">
+        <nav class="navigation">
+            <div class="nav-center">
+            
+            <h1><img src="favicon-32.png" alt="logo" style="border-radius: 50%;"> Get<span class="black">a</span>Job</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#apply_now">Jobs</a></li>
+                <li><a href="#contact_us">About</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+                <li class="sign"><button class="signin" onclick="openForm()">SIGN IN/UP</button></li>
+                
+            </ul>
+            <button class="icon" onclick="showMenu()"><span class="fa fa-bars nav-icon"></span></button>
+        </div>
+        </nav>
+    </div>
+    <div class="banner">
+        <div class="jobimg">
+        <img src="apply.jpg" alt="job" class="job">
+        </div>
+        <div class="jobinfo">
+            <h2>Get a Job You Love</h2>
+            <p>It's the time to do the best work of your life. Search for a job you love and submit your application asap.</p>
+            <a href="#apply_now"><button class="apply_now">APPLY NOW!</button></a>
+        </div>
+    </div>
+    <hr class="end">
+    <div class="apply" id="apply_now">
+        <form action="" class="form1">
+            <h3>Get a Job Now</h3>
+            <h4>Personal Information</h4>
+            <p>Name: <input type="text" name="name" id="name" required placeholder="Your Name"> </p>
+            <fieldset>
+            <legend>
+                Gender
+            </legend>
+            <p>
+                Male <input type="radio" name="gender" id="male">
+                Female <input type="radio" name="gender" id="female">
+            </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="add"  cols="40" rows="5" required placeholder="House No. Street Name,City"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email" required placeholder="abc@gmail.com"></p>
+            <p>Education: 
+                <input type="text" name="university" id="university" required placeholder="Univesity Name,Location,Pincode">
+                <input type="text" name="degree" id="degree" required placeholder="feild of study">
+                <p>Start date: <input type="date" name="startdate" required id="startdate" placeholder="mm/yy"></p>
+                <p>End date: <input type="date" name="enddate" required id="enddate" placeholder="mm/yy"></p>
+
+            </p>
+            <p>Skills:
+                <input type="text" class="skills" id="skills" placeholder="skill1,skill2,etc.">
+            </p>
+            <p>Job you want to apply for: 
+                <select name="jobtype" id="job_type" required > 
+                    <option value="">Select</option>
+                    <option value="webd">Web Development</option>
+                    <option value="softd">Software Development</option>
+                    <option value="appd">App Development</option>
+                    <option value="gd">Graphic Designer</option>
+                    <option value="dm">Digital Marketing</option>
+                </select>
+            </p>
+            <hr>
+            <h4>Job Details<span class="ifworking">(if working)</span></h4>
+            <p>Company Name:
+                <input type="text" class="comapny" id="company" placeholder="Name of the company currently working in">
+            </p>
+            <p>Company Website:
+                <input type="url" class="website" id="website" placeholder="abc.com">
+            </p>
+            <p>Current Salary:
+                <input type="number" class="cur_salary" id="cur_salary" placeholder="000000">
+            </p>
+            <p>Expected Salary:
+                <input type="number" class="exp_salary" id="exp_salary" required placeholder="000000">
+
+            </p>
+            <p>Notice Period
+                <input type="text" class="notice_period" required id="notice_period">
+            </p>
+            <hr>
+            <h4>Resume</h4>
+            <p>Upload Your Resume:
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" required name="filename">
+                  </form>
+            </p>
+            <button class="submit" id="submit" onclick="showAlert()">SUBMIT</button>
+        </form>
+    </div>
+    <footer id="contact_us">
+        <div class="payment">
+            <div class="download">Follow us
+                <div class="apps"></div>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                Subscribe to our newsletter
+                <div class="mail">
+                    <form class="email">
+                        <input type="email" class="email_ip" placeholder="enter your email">
+                        <button class="email_btn"> 
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="query">
+                FOR QUERIES
+                <div class="query_info">
+                    18002664444 | support@getajob.com
+                </div>
+                <div>
+                    (Monday to Saturday,10AM-7PM)
+                </div>
+            </div>
+        </div>
+    
+        <div class="bottom">
+            2020-21 &copy; Get a Job Pvt. Ltd All Rights Reserved
+
+        </div>
+    </footer>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div class="menu" id="open_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#apply_now">Jobs</a></li>
+            <li><a href="#contact_us">About</a></li>
+            <li><a href="#contact_us">Contact Us</a></li>
+            <li class="sign1"><button class="signin" onclick="openForm()">SIGN IN/UP</button></li>
+            <li class="close"><button class="close" onclick="closeMenu()">CLOSE</button></li>
+            
+        </ul>
+
+      </div>
+     
+    
+</body>
+</html>

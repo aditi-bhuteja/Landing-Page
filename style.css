@@ -1,0 +1,475 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.master{
+    width: 100%;
+    /* background-image: url("shop.jpg");
+    background-attachment: fixed; 
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* padding-bottom: 100px; */
+}
+nav{
+    background-color:rgb(255, 148, 109);
+    position: fixed;
+}
+.navigation{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 148, 109);
+}
+a{
+    text-decoration: none;
+    color: cornsilk;
+}
+.nav-center{
+    max-width:1200px;
+    margin: 0 auto;
+
+} 
+.nav-center h1{
+    float: left;
+    padding-left: 10px;
+    color:cornsilk;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+}
+.black{
+    color: black;
+}
+
+.nav-center ul{
+    float:right
+}
+.navigation ul li{
+    float: left;
+    list-style: none;
+    font-weight: 500;
+    padding:15px 40px 0px 0px;
+    font-size: 1.5rem;
+
+}
+
+.icon{
+    display: none;
+}
+.signin{
+    background: cornsilk;
+    height: 30px;
+    width: 170px;
+    font-size: 1.1rem;
+    color: coral;
+    border: transparent;
+    /* border:black 2px solid;*/
+    border-radius: 5px; 
+    cursor:grab;
+}
+.banner{
+     max-width: 1200px; 
+     width: 100%;
+    /* height: 100vh; */
+    margin:0 auto; 
+    display: flex;
+}
+.jobimg{
+    width: 50%;
+    float: left;
+
+}
+.jobinfo{
+    padding-top: 15%;
+    padding-left: 50px;
+    width: 50%;
+    float: right;
+}
+.job{
+    height: 600px;
+    width: 600px;
+}
+.jobinfo h2{
+    color: coral;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.jobinfo p{
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+.apply_now{
+    width: 180px;
+    height: 40px;
+    font-size: 1.2rem;
+    background: cornsilk;
+    border-radius: 3px;
+    border:none;
+    font-family: cursive;
+    cursor:help;
+}
+.end{
+    width:90%;
+    border: coral solid 2px;
+    align-self: center;
+}
+.form1{
+    /* padding: 90px; */
+    border: coral solid 1px;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+
+.apply{
+    background: cornsilk;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+h3{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: coral;
+    font-weight: 700;
+}
+h4{
+    font-size: 25px;
+    color: coral;
+    font-family:monospace;
+}
+form p,legend{
+    font-size: 19px;
+    font-family: cursive;
+    padding: 5px;
+}
+.submit{
+        width: 180px;
+        height: 40px;
+        font-size: 1.2rem;
+        background: rgb(250, 139, 99);
+        border-radius: 3px;
+        border:none;
+        font-family: cursive;
+        cursor:pointer;
+}
+.submit:hover{
+    background: rgb(56, 56, 56);
+    color: coral;
+}
+
+input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="url"],
+        select,
+        textarea{
+            width: 100%;
+            border: 1px solid black ;
+            padding: 6px;
+            height:30px;
+            border-radius: 5px;
+        }
+
+.payment{
+    background: rgb(34, 34, 34);
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    color: cornsilk;
+}
+.download , .newsletter {
+    text-transform: uppercase;
+    width: 33%;
+    text-align: center;
+    font-size: 18px;
+}
+.fa-facebook,.fa-instagram,.fa-linkedin,.fa-twitter{
+    color: cornsilk;
+    padding: 5px;
+    width: 20px;
+}
+.query{
+    width: 33%;
+    text-align: center;
+    font-size: 18px;
+}
+.email{
+    background: transparent;
+
+}
+.email_ip, .email_btn{
+    margin-top:10px;
+    background: transparent;
+    color: white;
+    border: cornsilk solid 1px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0%;
+    font-size: 18px;
+}
+.email_btn:hover{
+    color: black;
+    background: cornsilk;
+}
+.bottom{
+    background:coral ;
+    text-align: center;
+    color: cornsilk;
+    font-size: 20px;
+    height: 4px;
+    padding: 20px;
+
+}
+
+@media only screen and (max-width:850px){
+    .nav-center ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        float:right;
+        margin: 30px;
+        background: transparent;
+        color: cornsilk;
+        border:transparent;
+        font-size: 25px;
+    }
+    .jobinfo h2{
+        color: coral;
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .jobinfo p{
+        font-size: 1rem;
+        font-family: cursive;
+    }
+    .job{
+        height: 400px;
+        width: 400px;
+        padding-top: 30px;
+    }
+      
+    .payment{
+        flex-direction: column;
+        align-content:space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .download , .newsletter {
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        margin: 14px;
+    }
+    .query{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .email_ip, .email_btn{
+        margin-top:10px;
+        background: transparent;
+        color: white;
+        border: cornsilk solid 1px;
+        height: 25px;
+        text-align: center;
+        border-radius: 0%;
+        font-size: 18px;
+        
+    }
+}
+@media only screen and (max-width:768px){
+    .nav-center ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        float:right;
+        margin: 30px;
+        background: transparent;
+        color: cornsilk;
+        border:transparent;
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    .payment{
+        flex-direction: column;
+        align-content:space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .download , .newsletter {
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin: 14px;
+    }
+    .query{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .email_ip, .email_btn{
+        margin-top:10px;
+        background: transparent;
+        color: white;
+        border: cornsilk solid 1px;
+        height: 20px;
+        text-align: center;
+        border-radius: 0%;
+        font-size: 14px;
+        
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .jobimg{
+        width: 100%;
+        /* float: left; */
+    }
+    .jobinfo{
+        padding-top: 15%;
+        padding-left: 30%; 
+        /* width: 100%; */
+        /* float: right; */
+        text-align: center;
+    }
+    .job{
+        /* height: 400px; */
+        width: 100%;
+    }
+    .jobinfo h2{
+        color: coral;
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .jobinfo p{
+        font-size: 1rem;
+        font-family: cursive;
+    }
+}
+
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top:12%;
+    /* bottom: 0; */
+    right: 15px;
+    border: 3px solid coral;
+    border-radius: 5px;
+    /* z-index: 9; */
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: cornsilk;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .menu{
+      display:none;
+      position: fixed;
+    top:12%;
+    /* bottom: 0; */
+    right: 15px;
+    border: 3px solid coral;
+    border-radius: 5px;
+    text-align: center;
+    width:150px;
+    background: cornsilk;
+    padding-left:0px;
+    padding-right: 30px;
+  }
+  .menu ul{
+      list-style-type:none;
+      color: coral;
+      padding-top: 0px;
+  }
+  .menu a{ 
+      text-decoration: none;
+      color: coral;
+      font-size: 20px;
+
+  }
+  .menu .signin{
+    
+        background:coral;
+        height: 30px;
+        width: 100px;
+        font-size: 1rem;
+        color:cornsilk;
+        border: transparent;
+        /* border:black 2px solid;*/
+        border-radius: 5px; 
+        cursor:grab;
+    
+  }
+
+  .close{
+    background:coral;
+    height: 25px;
+    width: 110px;
+    font-size: 1rem;
+    color:cornsilk;
+    border: transparent;
+    /* border:black 2px solid;*/
+    border-radius: 5px; 
+    cursor:grab;
+    margin-top: 5%;
+  }
